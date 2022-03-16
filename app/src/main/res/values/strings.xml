@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Asterix i Obelix Soundboard</string>
+    <string name="facebook_app_id">194878327429</string>
+    <string name="notificationSetSuccessful">Ustawiono jako dźwięk powiadomienia.</string>
+    <string name="notificationTryAgain">Po nadaniu uprawnienia spróbuj ponownie ustawić dźwięk.</string>
+    <string name="alarmSetSuccessful">Ustawiono jako dźwięk dzwonka.</string>
+    <string name="permissionInfo">Zarządzanie ustawieniami systemu umożliwia nam zmiane dźwięku powiadomień i dzwonka. Nadaj to uprawnienie w ustawieniach.</string>
+    <string name="option1">Powiadomienie</string>
+    <string name="option2">Dzwonek</string>
+    <string name="setAs">Ustaw jako</string>
+</resources>

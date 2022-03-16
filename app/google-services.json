@@ -1,0 +1,395 @@
+{
+  "project_info": {
+    "project_number": "650924917220",
+    "firebase_url": "https://soundboardy.firebaseio.com",
+    "project_id": "soundboardy",
+    "storage_bucket": "soundboardy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:18384bd619557999",
+        "android_client_info": {
+          "package_name": "violentapplications.delordsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~1726808590"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:837792882f6c3175",
+        "android_client_info": {
+          "package_name": "violentapplications.dissoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~8827092576"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:7fe0e79b312b43b6",
+        "android_client_info": {
+          "package_name": "violentapplications.gohasoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~7007688027"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:89b6fb831021fae7",
+        "android_client_info": {
+          "package_name": "violentapplications.guciosoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~5380108999"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:861c593e11327cee",
+        "android_client_info": {
+          "package_name": "violentapplications.overpowsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~1966302198"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:1cd366fafb04c8b1",
+        "android_client_info": {
+          "package_name": "violentapplications.papiezsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~6617679792"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:28510773b10fbd28",
+        "android_client_info": {
+          "package_name": "violentapplications.pietrekkoguciksoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~5502419997"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:0877eb83f547cdc3",
+        "android_client_info": {
+          "package_name": "violentapplications.pudziansoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~8333327072"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:aab7b70181472d96",
+        "android_client_info": {
+          "package_name": "violentapplications.rafonixsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~2645683835"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:49839fc0806c4342",
+        "android_client_info": {
+          "package_name": "violentapplications.testovironsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~5218136850"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:4a7db2104dbf87fe",
+        "android_client_info": {
+          "package_name": "violentapplications.tyler1soundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~4546215870"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650924917220:android:f9d4e85b8e1fedc9",
+        "android_client_info": {
+          "package_name": "violentapplications.xayoosoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650924917220-f8uu64k3cuk6mca9pg5991npk8ks4jdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgqoao1V9skmdvkjqCHHAfCoxK_Z_aHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3913376764508228~3975171793"
+    }
+  ],
+  "configuration_version": "1"
+}
