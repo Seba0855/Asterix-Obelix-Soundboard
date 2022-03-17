@@ -16,8 +16,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.facebook.messenger.MessengerThreadParams;
@@ -35,15 +33,14 @@ public class MainActivity extends AppCompatActivity {
     private MessengerThreadParams mThreadParams;
     private boolean mPicking;
     private MediaPlayer mp;
-    private static final String TAG = "MainActivity";
+    String tag = "value";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        final RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) recyclerView.getLayoutParams();
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         Adapter myAdapter = new Adapter(this);
         myAdapter.setSoundList(getSoundList());
@@ -95,89 +92,77 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle(R.string.setAs);
                 builder.setCancelable(true);
-                //Set as Notification sound
-                builder.setNeutralButton(R.string.option1, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        /*
-                        In versions >= 23 of Android,
-                        system requires MANAGE_WRITE_SETTINGS permission in order to
-                        make this function work.
-                        */
-                        if (Build.VERSION.SDK_INT >= 23) {
-                            if (checkPermission()) {
-                                //If user has permission, allow him to set it
-                                if (Settings.System.canWrite(MainActivity.this)) {
-                                    RingtoneManager.setActualDefaultRingtoneUri(
-                                            MainActivity.this,
-                                            RingtoneManager.TYPE_NOTIFICATION, item.getUri());
-                                    Toast.makeText(getApplicationContext(), R.string.notificationSetSuccessful, Toast.LENGTH_LONG).show();
-                                } else {
-                                    //Refer user to settings if insufficient permission
-                                    Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS)
-                                            .setData(Uri.parse("package:" + getPackageName()))
-                                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    startActivity(intent);
-                                    Toast.makeText(getApplicationContext(), R.string.notificationTryAgain, Toast.LENGTH_LONG).show();
-                                }
-                                Log.e("value", "already granted");
-                            } else {
-                                requestPermission();
-                            }
-                        } else {
-                            //Versions <23 of Android don't require permission
-                            RingtoneManager.setActualDefaultRingtoneUri(
-                                    MainActivity.this,
-                                    RingtoneManager.TYPE_NOTIFICATION, item.getUri());
-                            Toast.makeText(getApplicationContext(), R.string.notificationSetSuccessful, Toast.LENGTH_LONG).show();
-                            Log.e("value", "already granted");
-                        }
-                    }
 
-                });
-                //Set as alarm sound
-                builder.setPositiveButton(R.string.option2, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        /*
-                        In versions >= 23 of Android,
-                        system requires MANAGE_WRITE_SETTINGS permission in order to
-                        make this function work.
-                        */
-                        if (Build.VERSION.SDK_INT >= 23) {
-                            if (checkPermission()) {
-                                if (Settings.System.canWrite(MainActivity.this)) {
-                                    RingtoneManager.setActualDefaultRingtoneUri(
-                                            MainActivity.this,
-                                            RingtoneManager.TYPE_RINGTONE, item.getUri());
-                                    Toast.makeText(getApplicationContext(), R.string.alarmSetSuccessful, Toast.LENGTH_LONG).show();
-                                } else {
-                                    Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS)
-                                            .setData(Uri.parse("package:" + getPackageName()))
-                                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    startActivity(intent);
-                                    Toast.makeText(getApplicationContext(), R.string.notificationTryAgain, Toast.LENGTH_LONG).show();
-                                }
-                                Log.e("value", "already granted");
-                            } else {
-                                requestPermission();
-                            }
-                        } else {
-                            //Versions <23 of Android don't require permission
-                            RingtoneManager.setActualDefaultRingtoneUri(
-                                    MainActivity.this,
-                                    RingtoneManager.TYPE_RINGTONE, item.getUri());
-                            Toast.makeText(getApplicationContext(), R.string.alarmSetSuccessful, Toast.LENGTH_LONG).show();
-                            Log.e("value", "already granted");
-                        }
-                    }
+                onNeutralButton(item, builder); // set notification sound
+                onPositiveButton(item, builder); // set alarm sound
 
-                });
                 AlertDialog alert = builder.create();
                 alert.show();
             }
         });
         //end of onCreate
+    }
+
+    private void onNeutralButton(final Sound item, AlertDialog.Builder builder) {
+        //Set as Notification sound
+        builder.setNeutralButton(R.string.option1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String successful = getResources().getString(R.string.notificationSetSuccessful);
+                setRingtone(item, successful, RingtoneManager.TYPE_NOTIFICATION);
+            }
+
+        });
+    }
+
+    private void onPositiveButton(final Sound item, AlertDialog.Builder builder) {
+        builder.setPositiveButton(R.string.option2, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String successful = getResources().getString(R.string.alarmSetSuccessful);
+                setRingtone(item, successful, RingtoneManager.TYPE_RINGTONE);
+            }
+        });
+    }
+
+    private void setRingtone(final Sound item, String successful, int ringtoneType) {
+        /*
+        In versions >= 23 of Android,
+        system requires MANAGE_WRITE_SETTINGS permission in order to
+        make this function work.
+        */
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkPermission()) {
+                //If user has permission, allow him to set it
+                if (Settings.System.canWrite(MainActivity.this)) {
+                    RingtoneManager.setActualDefaultRingtoneUri(
+                            MainActivity.this,
+                            ringtoneType, item.getUri());
+                    Toast.makeText(getApplicationContext(), successful,
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    //Refer user to settings if insufficient permission
+                    Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS)
+                            .setData(Uri.parse("package:" + getPackageName()))
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    Toast.makeText(getApplicationContext(), R.string.notificationTryAgain,
+                            Toast.LENGTH_LONG).show();
+                }
+                Log.e(tag, getResources().getString(R.string.log_granted));
+            } else {
+                requestPermission();
+            }
+        } else {
+            //Versions <23 of Android don't require permission
+            RingtoneManager.setActualDefaultRingtoneUri(
+                    MainActivity.this,
+                    ringtoneType, item.getUri());
+            Toast.makeText(getApplicationContext(), successful,
+                    Toast.LENGTH_LONG).show();
+            Log.e(tag, getResources().getString(R.string.log_granted));
+        }
     }
 
     private boolean checkPermission() {
@@ -190,7 +175,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, R.string.permissionInfo, Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(getApplicationContext(), R.string.notificationTryAgain, Toast.LENGTH_LONG).show();
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{
+                    android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
         }
     }
 
@@ -210,7 +196,11 @@ public class MainActivity extends AppCompatActivity {
         List<Sound> soundList = new ArrayList<>();
         for (int i = 0; i < stringArray.length; i++) {
             soundList.add(new Sound(stringArray[i],
-                    Uri.parse("android.resource://" + getPackageName() + "/" + getResources().getIdentifier(soundRaws[i].getName(), "raw", getPackageName()))));
+                    Uri.parse("android.resource://" +
+                            getPackageName() +
+                            "/" + getResources()
+                            .getIdentifier(soundRaws[i].getName(),
+                                    "raw", getPackageName()))));
         }
         return soundList;
     }

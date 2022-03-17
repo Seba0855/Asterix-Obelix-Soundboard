@@ -5,6 +5,7 @@
     <string name="notificationTryAgain">Po nadaniu uprawnienia spróbuj ponownie ustawić dźwięk.</string>
     <string name="alarmSetSuccessful">Ustawiono jako dźwięk dzwonka.</string>
     <string name="permissionInfo">Zarządzanie ustawieniami systemu umożliwia nam zmiane dźwięku powiadomień i dzwonka. Nadaj to uprawnienie w ustawieniach.</string>
+    <string name="log_granted">already granted</string>
     <string name="option1">Powiadomienie</string>
     <string name="option2">Dzwonek</string>
     <string name="setAs">Ustaw jako</string>
