@@ -1,9 +1,7 @@
-# Goha Soundboard - Android 
+# Asterix Obelix Soundboard - Android 
 ##### Data utworzenia projektu: *2017-09-19*
 
-Aplikacja stworzona w celu dzielenia się słynnymi tekstami znanej streamerki - Gohy.
-
-Zawiera treści wulgarne, które mogą być nieodpowiednie dla pewnej grupy odbiorców.
+Aplikacja stworzona w celu dzielenia się słynnymi cytatami z serii filmów Asterixa i Obelixa.
 
 ## Działanie i funkcje aplikacji
 🎵 Aplikacja odtworzy dźwięk poprzez wciśnięcie wybranego przycisku.
@@ -13,7 +11,7 @@ Zawiera treści wulgarne, które mogą być nieodpowiednie dla pewnej grupy odbi
 ⏰ W aplikacji jest również zaimplementowna funkcja ustawiania danego dźwięku jako dźwięk powiadomienia lub dźwięk budzika. W celu użycia tej funkcji należy przytrzymać przycisk odpowiadający danemu dźwiękowi i wybrać interesującą nas opcję.
 
 ## Zrzuty ekranu
-### Przykładowe zrzuty ekranu z aplikacji dostępnę są [pod tym linkiem.](https://imgur.com/a/QpD4nSf)
+### Przykładowe zrzuty ekranu z aplikacji dostępnę są [pod tym linkiem.](https://imgur.com/a/ZTgf2x2)
 
 ## Architektura
 Aplikacja została stworzona na urządzenia z systemem Android. 
@@ -27,7 +25,9 @@ By uruchomić projekt na swoim komputerze, należy go pobrać, a następnie otwo
 
 Cały etap budowania aplikacji powininen zostać przeprowadzony automatycznie przez IDE. Po wybudowaniu możemy uruchomić aplikację na wbudowanym emulatorze androida.
 
-## Obecność w Play Store, statystyki i geneza
-Aplikacja od czerwca 2019 *nie jest* już obecna w sklepie play. Projekt soundboardów był projektem hobbystycznym, stworzonym dla fanów Gohy, by umożliwić dzielenie się zabawnymi i słynnymi tekstami. Goha Soundboard był jedną z łącznie 14 aplikacji stworzonych w ramach tego projektu, jednak ta aplikacja odniosła ze wszystkich największy sukces i została najlepiej przyjęta przez użytkowników.
+##### Wysyłanie dźwięków przez Messengera może nie działać poprawnie. API wykorzystane do obsługi tej funkcjonalności jest już przestarzałe i nie jest wspierane, sama aplikacja została też wyłączona w panelu.
 
-##### Aplikację pobrano ponad 150 000 razy oraz miała ona około miliona wyświetleń. Ocena w sklepie play wynosiła ponad 4,5 gwiazdki.
+## Obecność w Play Store, statystyki i geneza
+Aplikacja od czerwca 2019 *nie jest* już obecna w sklepie play. Projekt soundboardów był projektem hobbystycznym, stworzonym m.in. dla fanów Asterixa i Obelixa, by umożliwić dzielenie się zabawnymi i słynnymi tekstami z filmu. Asterix i Obelix Soundboard był jedną z łącznie 14 aplikacji stworzonych w ramach tego projektu. Aplikacja w szczytowym momencie miała ponad 7000 pobrań.
+
+##### Jedna z aplikacji stworzonych w ramach tego projektu, która osiągnęła największy sukces, została pobrana ponad 150 000 razy oraz miała około miliona wyświetleń.
